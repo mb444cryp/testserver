@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            margin-top: 60px;
+            display: flex;
+            background-color:white; 
+        }
+        .flex-container>div{
+            background-color: rgb(90, 19, 131);
+            margin: 5px;
+            padding: 5px;
+            animation-name:moupia ;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-delay: 10s;
+            animation-direction: reverse;
+            }
+            @keyframes moupia {
+              0%{background-color: rgb(90, 19, 131);}
+              10%{background-color:aqua;}
+              20%{background-color: aquamarine;}
+              30%{background-color: royalblue;}
+              40%{background-color: violet;}
+              50%{background-color: orchid;}
+              60%{background-color: skyblue;}
+              70%{background-color: indigo;}
+              80%{background-color: blueviolet;}
+              90%{background-color: gold;}
+              100%{background-color: goldenrod;}
+            }
+        .text{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: aqua;
+        }
+        .btn{
+            margin-left: 50px;
+            width: 50px;
+            height: 30px;
+        }
+        .btn:hover{
+            background-color: rgb(71, 71, 230);
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: 1s;
+        }
+        .a{
+            border: 2px solid blueviolet;
+            height: 230px;
+            width: 150px;
+        }
+        .a:hover{
+            transform:rotatex(360deg);
+            transition: 2s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="a">
+
+            <img src="NATURE1.jpg" alt="img" width="150" height="150">
+            <p class="text">Waterfall</p>
+            <button type="button" class="btn">View</button>
+        </div>
+        <div class="a">
+
+            <img src="mountain.jpg" alt="img" width="150" height="150">
+            <p class="text">Mountain</p>
+            <button type="button" class="btn">View</button> 
+
+        </div>
+        <div class="a">
+        <img src="mew.jpg" alt="img" width="150" height="150">
+            <p class="text">Mew</p>
+            <button type="button" class="btn">View</button>
+
+        </div>
+    </div>
+</body>
+</html>
